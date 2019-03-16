@@ -15,7 +15,7 @@ class CashRegister
     quantity.times do 
       @items.push(item) 
     end 
-    @transactions.push(price.to_f*quantity)
+    @transactions.push(price*quantity)
   end 
   
   def apply_discount 
